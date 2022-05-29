@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link href="../css/style.css" rel="stylesheet" />
+  <link rel="refresh" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="topnav">
+    <ul>
+      <li><a href="../index.html" class="toplink">Home</a></li>
+      <li><a href="about.html" class="toplink">About</a></li>
+      <li><a href="contact.html" class="toplink">Contact</a></li>
+    </ul>
+  </nav>
+  <form action="https://formspree.io/f/xnqwwplr" method="POST" class="forms">
+
+    <fieldset>
+      <input type="text" name="first-name" id="first-name" placeholder="First Name..." required="">
+
+      <input type="text" name="family-name" id="family-name" placeholder="Family Name...">
+
+      <input type="email" name="email-address" id="email-adress" placeholder="Your email..." required="">
+
+      <textarea type="text" name="comment" id="comment" placeholder="Your comment..." required=""></textarea>
+
+      <label for="slot"> Which time slot is the best to contact you? </label>
+      <select id="slot" required>
+        <option selected value="" class="choice"> Select one</option>
+        <option value="time-slot" class="choice"> 9:00-11:00 </option>
+        <option value="time-slot" class="choice"> 11:00-13:00 </option>
+        <option value="time-slot" class="choice"> 13:00-15:00 </option>
+        <option value="time-slot" class="choice"> 15:00-17:00 </option>
+      </select>
+
+      <button type="submit" value="Submit" id="formbutton" disabled> Submit </button>
+    </fieldset>
+  </form>
+  <footer id="footer">
+    <div>
+      <a href="../index.html" class="bottomlink">Home</a>
+      <a href="about.html" class="bottomlink">About</a>
+      <a href="contact.html" class="bottomlink">Contact</a>
+    </div>
+    <div class="languages" id="languages"></div>
+  </footer>
+  <script src="../js/contact.js"></script>
+  <script src="../js/footer.js"></script>
+</body>
+
+</html>
